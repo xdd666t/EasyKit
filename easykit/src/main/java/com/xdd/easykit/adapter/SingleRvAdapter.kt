@@ -28,11 +28,11 @@ class SingleRvAdapter<T> : RecyclerView.Adapter<SingleRvAdapter<T>.SingleViewHol
     }
 
     constructor(
-        list: MutableList<T>?,
+        mutableList: MutableList<T>?,
         layoutId: Int,
         onBindDataToView: ((holder: SingleRvAdapter<T>.SingleViewHolder?, t: T) -> Unit)?
     ) {
-        var list = list
+        var list = mutableList
         if (list == null) {
             list = ArrayList()
         }
