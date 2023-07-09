@@ -83,5 +83,6 @@ class MainActivity : AppCompatActivity() {
             }
         })
         mBinding.rvModel.adapter = mSingleRvAdapter
+        mSingleRvAdapter?.updateData(mMainVM.list.value)
     }
 }
